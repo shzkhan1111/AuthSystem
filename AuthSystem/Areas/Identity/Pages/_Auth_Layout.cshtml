@@ -1,0 +1,54 @@
+﻿@{
+    //lat lay out for nested layout
+    //as main layout
+    Layout = "/Views/Shared/_Layout.cshtml";
+
+}
+
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <div class="card login-logout-tab">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Identity/Account/Login">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Identity/Account/Register">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@*there are scripts in the main layout
+    of login and register which are used by the main_layout
+    So We have to add the connection
+*@
+@section Scripts{
+    @RenderSection("Scripts", required: false)
+    @*keep active on tab*@
+    <script>
+        $(function () {
+            //current header will b compared and matched tab
+            //header willl get the Id and class
+            debugger
+            var current = this.location.pathname;
+            $('.nav-tabs li a').each(function () {
+                var x = $(this)
+                if (current.indexOf(x.attr('href')) !== -1) {
+                    x.addClass('active')
+                }
+            })
+        })
+    </script>
+}

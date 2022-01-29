@@ -166,3 +166,4 @@ C:\Users\Admin\source\repos\AuthSystem\AuthSystem\obj\Debug\netcoreapp3.1\Razor\
 C:\Users\Admin\source\repos\AuthSystem\AuthSystem\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\Admin\source\repos\AuthSystem\AuthSystem\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Users\Admin\source\repos\AuthSystem\AuthSystem\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\Admin\source\repos\AuthSystem\AuthSystem\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_Auth_Layout.cshtml.g.cs
