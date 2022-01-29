@@ -11,6 +11,7 @@ namespace AuthSystem.Migrations
                 name: "AspNetRoles",
                 columns: table => new
                 {
+
                     Id = table.Column<string>(nullable: false),
                     Name = table.Column<string>(maxLength: 256, nullable: true),
                     NormalizedName = table.Column<string>(maxLength: 256, nullable: true),
